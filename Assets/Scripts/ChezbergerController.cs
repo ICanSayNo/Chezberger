@@ -28,6 +28,9 @@ public class ChezbergerController : MonoBehaviour {
 				CurrentLane++;
 			}
 		}
+		if(Input.GetKeyDown(KeyCode.UpArrow)) {
+			GetComponent<Rigidbody>().AddForce(Vector3.up);
+		}
 		transform.Translate (new Vector3 (0, 0, 0.5f));
 	}
 	void OnTriggerEnter(Collider col){
