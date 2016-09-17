@@ -27,7 +27,7 @@ public class ChezbergerController : MonoBehaviour {
 				transform.Translate (new Vector3 (3.5f, 0, 0));
 				CurrentLane++;
 			}
-		}if (transform.position.y<2&&GetComponent<Rigidbody>().velocity.y<2){
+		}if (transform.position.y<2&&GetComponent<Rigidbody>().velocity.y<2 ){
 		if(Input.GetKeyDown(KeyCode.UpArrow)) {
 			GetComponent<Rigidbody>().AddForce(Vector3.up*350);
 		}
